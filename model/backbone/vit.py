@@ -27,7 +27,6 @@ import torch
 import torch.nn as nn
 from functools import partial
 import torch.nn.functional as F
-from matplotlib import pyplot as plt
 from timm.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
 from timm.models.helpers import load_pretrained
 from timm.models.layers import DropPath, to_2tuple, trunc_normal_
