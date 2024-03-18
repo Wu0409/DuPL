@@ -1,0 +1,10 @@
+.idea
+cache
+.DS_Store
+**/__pycache__/*
+helpers/data/*
+helpers/images2/*
+helpers/labels/*
+experts/expert_weights
+logging/*
+flagged/*
