@@ -476,7 +476,7 @@ def crop_from_pseudo_label_1(images, pseudo_mask=None, crop_num=2, crop_size=128
         roi_index = (
                 (pseudo_mask[i1, margin:(h - margin), margin:(w - margin)] != 0) &
                 (pseudo_mask[i1, margin:(h - margin), margin:(w - margin)] != 255)
-        ).nonzero()  # 不是背景不是255就是ROI
+        ).nonzero()
 
         if roi_index.shape[0] < crop_num:
             roi_index = (pseudo_mask[i1, margin:(h - margin),

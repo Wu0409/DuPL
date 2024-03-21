@@ -25,7 +25,7 @@ warnings.filterwarnings("ignore")
 parser = argparse.ArgumentParser()
 parser.add_argument("--infer_set", default="val", type=str, help="infer_set")
 parser.add_argument("--pooling", default="gmp", type=str, help="pooling method")
-parser.add_argument("--model_path", default="your model dir", type=str, help="model_path")
+parser.add_argument("--model_path", default="your_model_dir/checkpoints.pth", type=str, help="model_path")
 
 parser.add_argument("--backbone", default='deit_base_patch16_224', type=str, help="vit_base_patch16_224")
 parser.add_argument("--data_folder", default='your_voc_dir', type=str, help="dataset folder")

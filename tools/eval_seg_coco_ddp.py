@@ -33,7 +33,7 @@ local_rank = int(os.environ['LOCAL_RANK'])
 #####
 # Your weight
 ####
-parser.add_argument("--model_path", default="your model dir", type=str, help="model_path")
+parser.add_argument("--model_path", default="your_model_dir/checkpoints.pth", type=str, help="model_path")
 
 ####
 # Dataset
