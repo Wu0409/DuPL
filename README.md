@@ -82,16 +82,20 @@ NOTE: You can also use the scripts provided at this [repo](https://github.com/al
 # For Pascal VOC 2012
 python -m torch.distributed.run --nproc_per_node=2 train_final_voc.py --data_folder [../VOC2012]
 ```
-**NOTE:** The `--nproc_per_node` should be set according to your environment (recommend: 2x NVIDIA RTX 3090 GPUs
-).
+**NOTE:** 
+
+* The vaild batch size should be `4` (num_gpus * sampler_per_gpu).
+* The `--nproc_per_node` should be set according to your environment (recommend: 2x NVIDIA RTX 3090 GPUs).
 
 #### To train the segmentation model for the MS COCO dataset, please run
 ```bash
 # For MSCOCO
 python -m torch.distributed.run --nproc_per_node=4 train_final_coco.py --data_folder [../MSCOCO/coco2014]
 ```
-**NOTE:** The `--nproc_per_node` should be set according to your environment (recommend: 4x NVIDIA RTX 3090 GPUs
-).
+**NOTE:** 
+
+* The vaild batch size should be `8` (num_gpus * sampler_per_gpu).
+* The `--nproc_per_node` should be set according to your environment (recommend: 4x NVIDIA RTX 3090 GPUs).
 
 ### Evaluation
 #### Please install `pydensecrf` first:
