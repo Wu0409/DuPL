@@ -157,12 +157,12 @@ We have provided the visualization of CAMs and segmentation images (RGB) on VOC 
 ## Citation
 Please kindly cite our paper if you find it's helpful in your work:
 ```bibtex
-@misc{wu2024dupl,
-      title={DuPL: Dual Student with Trustworthy Progressive Learning for Robust Weakly Supervised Semantic Segmentation}, 
-      author={Yuanchen Wu and Xichen Ye and Kequan Yang and Jide Li and Xiaoqiang Li},
-      year={2024},
-      eprint={2403.11184},
-      archivePrefix={arXiv},
+@inproceedings{wu2024dupl,
+  title={DuPL: Dual Student with Trustworthy Progressive Learning for Robust Weakly Supervised Semantic Segmentation},
+  author={Wu, Yuanchen and Ye, Xichen and Yang, Kequan and Li, Jide and Li, Xiaoqiang},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={3534--3543},
+  year={2024}
 }
 ```
 
